@@ -43,6 +43,26 @@ var NormalDialogUI=(function(_super){
 
 		}
 
-		NormalDialogUI.uiView={"type":"Dialog","props":{"width":300,"height":200},"child":[{"type":"Image","props":{"y":0,"x":0,"width":300,"skin":"comp/bg.png","height":200,"sizeGrid":"28,5,5,5"}},{"type":"Label","props":{"y":90,"x":70,"wordWrap":true,"width":160,"var":"txContext","valign":"middle","text":"注册功能尚未开放","styleSkin":"comp/label.png","height":24,"fontSize":20,"font":"Microsoft YaHei","align":"center"}},{"type":"Button","props":{"y":145,"x":105,"width":90,"var":"btOK","skin":"comp/button.png","labelSize":16,"labelFont":"Microsoft YaHei","label":"关闭","height":30}},{"type":"Button","props":{"y":3,"x":266,"var":"btClose","skin":"comp/btn_close.png"}}]};
+		NormalDialogUI.uiView={"type":"Dialog","props":{"width":300,"height":200},"child":[{"type":"Image","props":{"y":0,"x":0,"width":300,"skin":"comp/bg.png","height":200,"sizeGrid":"28,5,5,5"}},{"type":"Label","props":{"y":90,"x":70,"wordWrap":true,"width":160,"var":"txContext","valign":"middle","text":"注册功能尚未开放","styleSkin":"comp/label.png","height":24,"fontSize":20,"font":"Microsoft YaHei","align":"center"}},{"type":"Button","props":{"y":145,"x":105,"width":90,"var":"btOK","skin":"comp/button.png","labelSize":16,"labelFont":"Microsoft YaHei","label":"关闭","height":30}},{"type":"Button","props":{"y":3,"x":266,"var":"btClose","skin":"comp/btn_close.png","name":"close"}}]};
 		return NormalDialogUI;
 	})(Dialog);
+var RegisterUI=(function(_super){
+		function RegisterUI(){
+			
+
+			RegisterUI.__super.call(this);
+		}
+
+		CLASS$(RegisterUI,'ui.RegisterUI',_super);
+		var __proto__=RegisterUI.prototype;
+		__proto__.createChildren=function(){
+		    			View.regComponent("TextInputEx",TextInputEx);
+
+			laya.ui.Component.prototype.createChildren.call(this);
+			this.createView(RegisterUI.uiView);
+
+		}
+
+		RegisterUI.uiView={"type":"View","props":{"width":300,"height":300},"child":[{"type":"Image","props":{"y":0,"x":0,"width":300,"skin":"comp/bg.png","height":300,"sizeGrid":"28,5,5,5"}},{"type":"Label","props":{"y":5,"x":138,"text":"注册","styleSkin":"comp/label.png","font":"Microsoft YaHei","color":"#ffffff"}},{"type":"Button","props":{"y":251,"x":112,"skin":"comp/button.png","label":"提交"}},{"type":"Box","props":{"y":55,"x":41,"name":"item0"},"child":[{"type":"TextInput","props":{"x":48,"width":170,"text":"请输入用户名","skin":"comp/textinput.png","runtime":"TextInputEx","height":22,"color":"#c3c3c3"}},{"type":"Label","props":{"y":5,"x":0,"text":"用户名：","styleSkin":"comp/label.png"}}]},{"type":"Box","props":{"y":92,"x":41,"name":"item1"},"child":[{"type":"TextInput","props":{"x":48,"width":170,"text":"请输入密码","skin":"comp/textinput.png","runtime":"TextInputEx","height":22,"color":"#c3c3c3"}},{"type":"Label","props":{"y":5,"x":-12,"text":"输入密码：","styleSkin":"comp/label.png"}}]},{"type":"Box","props":{"y":128,"x":41,"name":"item2"},"child":[{"type":"TextInput","props":{"x":48,"width":170,"text":"请确认密码","skin":"comp/textinput.png","runtime":"TextInputEx","height":22,"color":"#c3c3c3"}},{"type":"Label","props":{"y":5,"x":-12,"text":"确认密码：","styleSkin":"comp/label.png"}}]},{"type":"Box","props":{"y":165,"x":43,"name":"item3"},"child":[{"type":"TextInput","props":{"x":48,"width":170,"text":"请输入邮箱地址","skin":"comp/textinput.png","runtime":"TextInputEx","promptColor":"#c3c3c3","height":22,"color":"#c3c3c3"}},{"type":"Label","props":{"y":5,"x":-13,"text":"邮箱地址：","styleSkin":"comp/label.png"}}]},{"type":"Box","props":{"y":201,"x":41,"name":"item3"},"child":[{"type":"TextInput","props":{"x":48,"width":170,"text":"请输入手机号码","skin":"comp/textinput.png","runtime":"TextInputEx","restrict":"0123456789","maxChars":11,"height":22,"color":"#c3c3c3"}},{"type":"Label","props":{"y":5,"x":-12,"text":"手机号码：","styleSkin":"comp/label.png"}}]}]};
+		return RegisterUI;
+	})(View);

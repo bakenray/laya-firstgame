@@ -3,6 +3,7 @@ var LoginView = (function(_super){
     function LoginView(){
         LoginView.super(this) //调用父类的构造函数
         this.dlg
+        this.regDlg
     }
     Laya.class(LoginView,"LoginView",_super)  //设置继承关系
 
@@ -15,6 +16,8 @@ var LoginView = (function(_super){
 
         this.dlg = new NormalDlg()  //创建弹窗实例
         this.dlg.init()             //弹窗初始化
+
+        this.regDlg = new RegDialog()
     }
     // 重置函数
     LoginView.prototype.reset = function(){
@@ -29,8 +32,9 @@ var LoginView = (function(_super){
     }
     // 注册按钮函数
     LoginView.prototype.onButtonReg = function(){
-        console.log('你点了注册')
-        this.dlg.setContext('注册功能未开放')
+        // console.log('你点了注册')
+        // this.dlg.setContext('注册功能未开放')
+        this.regDlg.popup()
     }
     return LoginView
 })(loginUI)

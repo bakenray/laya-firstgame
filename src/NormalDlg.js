@@ -7,8 +7,10 @@ var NormalDlg = (function(_super){
 
     // 设置弹窗初始化
     NormalDlg.prototype.init =function(){
-        this.btClose.on(Laya.Event.CLICK,this,this.close)
-        this.btOK.on(Laya.Event.CLICK,this,this.close)
+        // this.btClose.on(Laya.Event.CLICK,this,this.close)
+        // this.btOK.on(Laya.Event.CLICK,this,this.close)
+        this.btClose.name = Dialog.CLOSE
+        this.btOK.name = Dialog.CLOSE
     }
 
     // 设置弹窗信息
