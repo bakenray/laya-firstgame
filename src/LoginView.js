@@ -1,8 +1,10 @@
-var LoginView = function(){
+var LoginView = (function(_super){
 
-    LoginView.super(this)  //调用父类的构造函数
-
-    var dlg 
+    function LoginView(){
+        LoginView.super(this) //调用父类的构造函数
+        this.dlg
+    }
+    Laya.class(LoginView,"LoginView",loginUI)  //设置继承关系
 
     // 初始化函数
     LoginView.prototype.init = function(){
@@ -30,6 +32,6 @@ var LoginView = function(){
         console.log('你点了注册')
         this.dlg.setContext('注册功能未开放')
     }
-}
+    return LoginView
+})(loginUI)
 
-Laya.class(LoginView,"LoginView",loginUI)  //设置继承关系
