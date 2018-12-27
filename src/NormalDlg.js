@@ -3,7 +3,7 @@ var NormalDlg = (function(_super){
     function NormalDlg(){
         NormalDlg.super(this)    //调用父类的构造函数
     }
-    Laya.class(NormalDlg,'NormalDlg',NormalDialogUI)
+    Laya.class(NormalDlg,'NormalDlg',_super)
 
     // 设置弹窗初始化
     NormalDlg.prototype.init =function(){

@@ -4,7 +4,7 @@ var LoginView = (function(_super){
         LoginView.super(this) //调用父类的构造函数
         this.dlg
     }
-    Laya.class(LoginView,"LoginView",loginUI)  //设置继承关系
+    Laya.class(LoginView,"LoginView",_super)  //设置继承关系
 
     // 初始化函数
     LoginView.prototype.init = function(){
