@@ -11,8 +11,8 @@ var LoginView = function(){
         // 监听登录按钮按下事件 - 登录按钮
         this.btLogin.on(Laya.Event.CLICK,this,this.onButtonLogin)
 
-        this.dlg = new NormalDlg()
-        this.dlg.init()
+        this.dlg = new NormalDlg()  //创建弹窗实例
+        this.dlg.init()             //弹窗初始化
     }
     // 重置函数
     LoginView.prototype.reset = function(){

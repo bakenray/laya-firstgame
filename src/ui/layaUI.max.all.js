@@ -26,6 +26,7 @@ var loginUI=(function(_super){
 var NormalDialogUI=(function(_super){
 		function NormalDialogUI(){
 			
+		    this.txContext=null;
 		    this.btOK=null;
 		    this.btClose=null;
 
@@ -41,6 +42,6 @@ var NormalDialogUI=(function(_super){
 
 		}
 
-		NormalDialogUI.uiView={"type":"Dialog","props":{"width":300,"height":200},"child":[{"type":"Image","props":{"y":0,"x":0,"width":300,"skin":"comp/bg.png","height":200,"sizeGrid":"28,5,5,5"}},{"type":"Label","props":{"y":90,"x":70,"text":"注册功能尚未开放","styleSkin":"comp/label.png","fontSize":20}},{"type":"Button","props":{"y":145,"x":105,"width":90,"var":"btOK","skin":"comp/button.png","labelSize":20,"label":"关闭","height":30}},{"type":"Button","props":{"y":3,"x":266,"var":"btClose","skin":"comp/btn_close.png"}}]};
+		NormalDialogUI.uiView={"type":"Dialog","props":{"width":300,"height":200},"child":[{"type":"Image","props":{"y":0,"x":0,"width":300,"skin":"comp/bg.png","height":200,"sizeGrid":"28,5,5,5"}},{"type":"Label","props":{"y":90,"x":70,"wordWrap":true,"width":160,"var":"txContext","valign":"middle","text":"注册功能尚未开放","styleSkin":"comp/label.png","height":24,"fontSize":20,"font":"Microsoft YaHei","align":"center"}},{"type":"Button","props":{"y":145,"x":105,"width":90,"var":"btOK","skin":"comp/button.png","labelSize":16,"labelFont":"Microsoft YaHei","label":"关闭","height":30}},{"type":"Button","props":{"y":3,"x":266,"var":"btClose","skin":"comp/btn_close.png"}}]};
 		return NormalDialogUI;
 	})(Dialog);
