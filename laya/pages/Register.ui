@@ -1,11 +1,11 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":7,
-    "props":{"width":300,"var":"btSubmit","sceneColor":"#000000","height":300},
+    "selectedBox":7,
+    "selecteID":5,
+    "props":{"width":300,"sceneColor":"#000000","height":300},
     "nodeParent":-1,
-    "label":"View(btSubmit)",
+    "label":"View",
     "isOpen":true,
     "isDirectory":true,
     "isAniNode":true,
@@ -24,7 +24,7 @@
             "compId":2,
             "child":[
                 ],
-            "$LOCKED":true
+            "$LOCKED":false
         },
         {
             "x":15,
@@ -38,21 +38,21 @@
             "compId":3,
             "child":[
                 ],
-            "$LOCKED":true
+            "$LOCKED":false
         },
         {
             "x":15,
             "type":"Button",
-            "props":{"y":251,"x":112,"skin":"comp/button.png","label":"提交"},
+            "props":{"y":251,"x":112,"var":"btSubmit","skin":"comp/button.png","label":"提交"},
             "nodeParent":1,
-            "label":"Button",
+            "label":"Button(btSubmit)",
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,
             "compId":4,
             "child":[
                 ],
-            "$LOCKED":true
+            "$LOCKED":false
         },
         {
             "x":15,

@@ -5,7 +5,7 @@ var LoginView = (function(_super){
         this.dlg
         this.regDlg
     }
-    Laya.class(LoginView,"LoginView",_super)  //设置继承关系
+    Laya.class(LoginView, "LoginView", _super)  //设置继承关系
 
     // 初始化函数
     LoginView.prototype.init = function(){
@@ -20,11 +20,11 @@ var LoginView = (function(_super){
         this.regDlg = new RegDialog()
     }
     // 重置函数
-    LoginView.prototype.reset = function(){
-        // 取消监听
-        this.btReg.off(Laya.Event.CLICK,this,this.onButtonReg)
-        this.btLogin.off(Laya.Event.CLICK,this,this.onButtonLogin)
-    }
+    // LoginView.prototype.reset = function(){
+    //     // 取消监听
+    //     this.btReg.off(Laya.Event.CLICK,this,this.onButtonReg)
+    //     this.btLogin.off(Laya.Event.CLICK,this,this.onButtonLogin)
+    // }
     // 登录按钮函数
     LoginView.prototype.onButtonLogin = function(){
         console.log('你点了登录')
