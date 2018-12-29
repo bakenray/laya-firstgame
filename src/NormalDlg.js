@@ -12,13 +12,10 @@ var NormalDlg = (function(_super){
         this.btClose.name = Dialog.CLOSE
         this.btOK.name = Dialog.CLOSE
     }
-
     // 设置弹窗信息
     NormalDlg.prototype.setContext = function(context){
         this.txContext.text = context
         this.popup()
     }
-
     return NormalDlg    //返回这个标识符，实际上是构造函数
-
 })(NormalDialogUI)

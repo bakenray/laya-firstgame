@@ -1,19 +1,17 @@
 {
     "x":0,
-    "type":"View",
-    "selectedBox":7,
-    "selecteID":5,
+    "type":"Dialog",
+    "selectedBox":1,
     "props":{"width":300,"sceneColor":"#000000","height":300},
     "nodeParent":-1,
-    "label":"View",
-    "isOpen":true,
+    "label":"Dialog",
+    "isOpen":false,
     "isDirectory":true,
     "isAniNode":true,
     "hasChild":true,
     "compId":1,
     "child":[
         {
-            "x":15,
             "type":"Image",
             "props":{"y":0,"x":0,"width":300,"skin":"comp/bg.png","height":300},
             "nodeParent":1,
@@ -27,7 +25,6 @@
             "$LOCKED":false
         },
         {
-            "x":15,
             "type":"Label",
             "props":{"y":5,"x":138,"text":"注册","styleSkin":"comp/label.png","font":"Microsoft YaHei","color":"#ffffff"},
             "nodeParent":1,
@@ -41,7 +38,6 @@
             "$LOCKED":false
         },
         {
-            "x":15,
             "type":"Button",
             "props":{"y":251,"x":112,"var":"btSubmit","skin":"comp/button.png","label":"提交"},
             "nodeParent":1,
@@ -55,7 +51,6 @@
             "$LOCKED":false
         },
         {
-            "x":15,
             "type":"Box",
             "props":{"y":55,"x":41,"name":"item0"},
             "nodeParent":1,
@@ -67,7 +62,6 @@
             "compId":7,
             "child":[
                 {
-                    "x":30,
                     "type":"TextInput",
                     "props":{"x":48,"width":170,"text":"请输入用户名","skin":"comp/textinput.png","runtime":"TextInputEx","height":22,"color":"#c3c3c3"},
                     "nodeParent":7,
@@ -80,7 +74,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Label",
                     "props":{"y":5,"x":0,"text":"用户名：","styleSkin":"comp/label.png"},
                     "nodeParent":7,
@@ -94,7 +87,6 @@
                 }]
         },
         {
-            "x":15,
             "type":"Box",
             "props":{"y":92,"x":41,"name":"item1"},
             "nodeParent":1,
@@ -106,7 +98,6 @@
             "compId":11,
             "child":[
                 {
-                    "x":30,
                     "type":"TextInput",
                     "props":{"x":48,"width":170,"text":"请输入密码","skin":"comp/textinput.png","runtime":"TextInputEx","height":22,"color":"#c3c3c3"},
                     "nodeParent":11,
@@ -119,7 +110,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Label",
                     "props":{"y":5,"x":-12,"text":"输入密码：","styleSkin":"comp/label.png"},
                     "nodeParent":11,
@@ -133,7 +123,6 @@
                 }]
         },
         {
-            "x":15,
             "type":"Box",
             "props":{"y":128,"x":41,"name":"item2"},
             "nodeParent":1,
@@ -145,7 +134,6 @@
             "compId":14,
             "child":[
                 {
-                    "x":30,
                     "type":"TextInput",
                     "props":{"x":48,"width":170,"text":"请确认密码","skin":"comp/textinput.png","runtime":"TextInputEx","height":22,"color":"#c3c3c3"},
                     "nodeParent":14,
@@ -158,7 +146,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Label",
                     "props":{"y":5,"x":-12,"text":"确认密码：","styleSkin":"comp/label.png"},
                     "nodeParent":14,
@@ -172,7 +159,6 @@
                 }]
         },
         {
-            "x":15,
             "type":"Box",
             "props":{"y":165,"x":43,"name":"item3"},
             "nodeParent":1,
@@ -184,7 +170,6 @@
             "compId":17,
             "child":[
                 {
-                    "x":30,
                     "type":"TextInput",
                     "props":{"x":48,"width":170,"text":"请输入邮箱地址","skin":"comp/textinput.png","runtime":"TextInputEx","promptColor":"#c3c3c3","height":22,"color":"#c3c3c3"},
                     "nodeParent":17,
@@ -197,7 +182,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Label",
                     "props":{"y":5,"x":-13,"text":"邮箱地址：","styleSkin":"comp/label.png"},
                     "nodeParent":17,
@@ -211,7 +195,6 @@
                 }]
         },
         {
-            "x":15,
             "type":"Box",
             "props":{"y":201,"x":41,"name":"item3"},
             "nodeParent":1,
@@ -223,7 +206,6 @@
             "compId":20,
             "child":[
                 {
-                    "x":30,
                     "type":"TextInput",
                     "props":{"x":48,"width":170,"text":"请输入手机号码","skin":"comp/textinput.png","runtime":"TextInputEx","restrict":"0123456789","maxChars":11,"height":22,"color":"#c3c3c3"},
                     "nodeParent":20,
@@ -236,7 +218,6 @@
                         ]
                 },
                 {
-                    "x":30,
                     "type":"Label",
                     "props":{"y":5,"x":-12,"text":"手机号码：","styleSkin":"comp/label.png"},
                     "nodeParent":20,
